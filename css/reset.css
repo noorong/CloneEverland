@@ -41,6 +41,22 @@ a{
 	text-decoration:none;
 }
 
+a:visited,a:active{
+	color: skyblue;
+	text-decoration: underline;
+}
+
+a:link{
+	color: darkcyan;
+	font-weight: 900;
+}
+
+a:link:hover{
+	letter-spacing: 4px;
+	color: blue;
+	transition: all 0.4s;
+}
+
 img{
 	vertical-align:top;
 }
@@ -54,15 +70,11 @@ hr{
 }
 
 input, textarea{
-	width:100%;
 	margin:0;
 	padding:0;
-	border:0;
-	border-bottom:1px solid #e8340c;
 	font-family:'Roboto', sans-serif;
-	font-size:12px;
+	font-size:14px;
 	vertical-align:top;
-	border-radius:0;
 	box-sizing:content-box;
 }
 
