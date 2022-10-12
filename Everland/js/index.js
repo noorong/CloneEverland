@@ -7,6 +7,7 @@ const h1 = document.querySelector(".mainLogo h1");
 
 // gnb 슬라이드
 const gnb = document.querySelector(".gnb ul");
+const btm = document.querySelector(".bottom");
 const sub = document.querySelector(".submenu");
 
 console.log(gnb,123,sub)
@@ -15,8 +16,8 @@ let subToggle = true;
 
 function show(){
   if(subToggle){
-    sub.classList.add('down');
-    sub.classList.remove('up');
+    sub.classList.add('fadeIn');
+    sub.classList.remove('fadeOut');
     subToggle = !subToggle;
   }
   
@@ -24,14 +25,14 @@ function show(){
 
 function hide(){
     if(!subToggle){
-        sub.classList.add('up');
-        sub.classList.remove('down');
+        sub.classList.add('fadeOut');
+        sub.classList.remove('fadeIn');
         subToggle = !subToggle;
       }
 }
 
 gnb.addEventListener("mouseover", show);
-gnb.addEventListener("mouseleave", hide);
+btm.addEventListener("mouseleave", hide);
 
 
 
