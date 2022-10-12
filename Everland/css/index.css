@@ -150,7 +150,7 @@ header section nav div button{
 .bottom{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    position: relative;
 }
 
 .gnb{
@@ -187,9 +187,14 @@ header section nav div button{
     justify-content: center;
     gap: 60px;
     border: 1px solid #d2d2d2;
-    max-height: 300px;
     z-index: 9999;
-    position: relative;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+}
+
+.submenu div{
+    display: flex;
 }
 
 .submenu div{
