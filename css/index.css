@@ -1,99 +1,98 @@
 @charset "utf-8";
 @import "reset.css";
 
-body{
-    background-color: snow;
-    position: relative;
-    /* 플로라화이트, 고스트화이트, 아이보리 */
+body {
+  background-color: snow;
+  position: relative;
+  /* 플로라화이트, 고스트화이트, 아이보리 */
 }
 
 /* 헤더 */
-.header{
-    max-width: 100%;
-    background-color: gray;
-    margin-bottom: 2em;
-    padding: 8px 0;
+.header {
+  max-width: 100%;
+  background-color: gray;
+  margin-bottom: 2em;
+  padding: 8px 0;
 }
 
-.nav{
-    padding: 10px 10px 10px 4%;
+.nav {
+  padding: 10px 10px 10px 4%;
 }
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.menu li a{
-    color: white;
-    text-transform: uppercase;
+.menu li a {
+  color: white;
+  text-transform: uppercase;
 }
 
-.menu li:hover{
-    background-color: darkgray;
-    letter-spacing: 4px;
-    transition: all 0.4s;
+.menu li:hover {
+  background-color: darkgray;
+  letter-spacing: 4px;
+  transition: all 0.4s;
 }
 
 /* 메인 */
-.main{
-    padding-left: 4%;
+.main {
+  padding-left: 4%;
 }
 
 /* 프로필 */
 
-#profile h1{
-    font-size: 4em;
-    height: 76px
+#profile h1 {
+  font-size: 4em;
+  height: 76px;
 }
 
-#profile p{
-    overflow: hidden;
+#profile p {
+  overflow: hidden;
 }
 
-#profile p img{
-    width: 300px;
+#profile p img {
+  width: 400px;
 }
 
-#profile p img:hover{
-    transform: scale(1.1);
-    transition: transform 1s;
+#profile p img:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
 }
 
 /* 디테일 */
-#detail{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10% 0 2% 0;
+#detail {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10% 0 2% 0;
 }
 
-#detail section{
-    width: 50%;
+#detail section {
+  width: 50%;
 }
 
-#detail section ul{
-    padding-bottom: 12%;
-
+#detail section ul {
+  padding-bottom: 12%;
 }
 
-#detail section ul p{
-    font-size: 2.6em;
-    margin-bottom: 4%;
-    border-bottom: 1px solid #ddd;
-    width: 400px;
+#detail section ul p {
+  font-size: 2.6em;
+  margin-bottom: 4%;
+  border-bottom: 1px solid #ddd;
+  width: 400px;
 }
 
-#detail section ul li{
-    text-indent: 20px;
-    height: 26px;
+#detail section ul li {
+  text-indent: 20px;
+  height: 26px;
 }
 
-#detail section ul li a{
-    vertical-align: middle;
+#detail section ul li a {
+  vertical-align: middle;
 }
-#detail section ul li input{
-    box-sizing: border-box;
+#detail section ul li input {
+  box-sizing: border-box;
 }
 
 /* #detail section ul li input:hover{
@@ -101,39 +100,37 @@ body{
     border: none;
 	transition: all 0.4s;
 } */
-  
 
-#detail section ul li:first-of-type input{
-    background-color: transparent;
-    width: 60px;
-    text-align: center;
-    border-radius: 4px;
-    margin-left: 6px;
+#detail section ul li:first-of-type input {
+  background-color: transparent;
+  width: 60px;
+  text-align: center;
+  border-radius: 4px;
+  margin-left: 6px;
 }
 
-#detail section ul li:last-of-type input:last-child{
-    background-color: transparent;
-    width: 160px;
-    text-align: center;
-    border-radius: 4px;
-    margin-left: 6px;
-} 
+#detail section ul li:last-of-type input:last-child {
+  background-color: transparent;
+  width: 160px;
+  text-align: center;
+  border-radius: 4px;
+  margin-left: 6px;
+}
 
 /* 푸터 */
-footer{
-    border-top: 2px solid #d3d3d3;
-    max-width: 100%;
-    padding: 60px 20px;
-    background-color: #ddd;
+footer {
+  border-top: 2px solid #d3d3d3;
+  max-width: 100%;
+  padding: 60px 20px;
+  background-color: #ddd;
 }
 
-.copylight{
-    background-color: #ddd;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    border-top: 2px solid #d3d3d3;
-
+.copylight {
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid #d3d3d3;
 }

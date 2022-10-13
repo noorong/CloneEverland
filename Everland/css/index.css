@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import "reset.css";
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
 
 #Wrap {
   display: grid;
@@ -245,6 +246,7 @@ header section nav div button {
 /* 슬라이드 */
 main {
   overflow: hidden;
+  font-family: "Noto Sans KR", Montserrat, "Malgun Gothic", Dotum, sans-serif;
 }
 
 .bannerWrap {
@@ -265,7 +267,7 @@ main {
 .moveWrap {
   position: absolute;
   bottom: 15px;
-  left: 9.6%;
+  left: 9.2%;
   min-width: 140px;
 }
 
@@ -288,9 +290,11 @@ main {
 .moveBox {
   position: absolute;
 }
+
 .moveBox .prev {
   left: 0;
 }
+
 .moveBox .next {
   right: 0;
 }
@@ -300,12 +304,12 @@ main {
 .content-inner {
   margin: 0 auto;
   width: 1040px;
+  padding-top: 60px;
 }
 
 .titleWrap {
   margin: 40px 0;
   text-align: center;
-  font-family: "Noto Sans KR", Montserrat, "Malgun Gothic", Dotum, sans-serif;
   line-height: 40px;
   position: relative;
 }
@@ -346,6 +350,7 @@ main {
   text-align: center;
   background: transparent;
 }
+
 /* 이미지 박스 */
 .list-columns ul {
   display: flex;
@@ -371,12 +376,13 @@ main {
 
 .individual .list-img:hover img {
   transform: scale(1.05);
+  cursor: pointer;
   transition: all 0.5s;
 }
 
 .phrase {
   padding: 20px 0;
-  width: 100%;
+  line-height: 22px;
 }
 
 .text-small {
@@ -389,4 +395,119 @@ main {
   text-align: center;
   font-size: 17px;
   letter-spacing: -1px;
+}
+
+/* 티켓 */
+.ticketInfo {
+  padding: 60px 0;
+  margin: 0 auto;
+  width: 1040px;
+}
+
+.small {
+  display: block;
+  font-size: 14px;
+  color: #3b3b3b;
+  margin-bottom: 10px;
+}
+
+.ticketInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.ticketInner li {
+  line-height: 1.6;
+  width: 20%;
+}
+
+.ticketInner li:hover {
+  cursor: pointer;
+}
+
+.ticketInner li dl dt {
+  color: #272830;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ticketInner li dl dd {
+  color: #ff4c2b;
+  font-size: 14px;
+  text-indent: 4px;
+  font-weight: 500;
+}
+
+.ticketInner li img {
+  width: 62px;
+  height: 62px;
+}
+
+/* ticketBtn */
+.btnArrow {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btnArrow i {
+  color: deepskyblue;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.btnArrow i:hover {
+  color: red;
+}
+
+.ticketBtn {
+  display: inline-block;
+  padding: 14px 0;
+  width: 280px;
+  border: 1px solid #ff4c1c;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+.ticketBtn span {
+  color: #444;
+}
+
+.ticketBtn span strong {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+/* 에버랜드 꿀팁 */
+.goolTip {
+  margin: 0 auto;
+  width: 1040px;
+  padding: 60px 0;
+}
+
+.uniqueTitle {
+  font-family: "Single Day", cursive;
+  background: linear-gradient(circle #de6161 50%, #2657eb 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.line3 {
+  position: absolute;
+  width: 360px;
+  height: 1px;
+  background-color: brown;
+  top: 20px;
+  left: 0;
+}
+
+.line4 {
+  position: absolute;
+  width: 360px;
+  height: 1px;
+  background-color: brown;
+  top: 20px;
+  right: 10px;
 }
