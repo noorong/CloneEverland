@@ -299,9 +299,8 @@ main {
   right: 0;
 }
 
-/* -------------------------what's new-------------------------------------- */
-
-.content-inner {
+/* what's new */
+.whatInner {
   margin: 0 auto;
   width: 1040px;
   padding-top: 60px;
@@ -345,49 +344,42 @@ main {
 }
 
 /* 이미지 박스 */
-.list-columns ul {
+.innerImg ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.individual {
+.imgBox {
   width: 235px;
   height: 270px;
 }
 
-.individual .list-img {
+.imgBox .imgList {
   overflow: hidden;
   width: 235px;
   height: 165px;
 }
 
-.individual .list-img img {
-  width: 100%;
-  height: 100%;
-}
-
-.individual .list-img:hover img {
+.imgBox .imgList:hover img {
   transform: scale(1.1);
   cursor: pointer;
   transition: all 0.4s;
 }
 
-.phrase {
+.innerContent {
   padding: 20px 0;
   line-height: 22px;
 }
 
-.smallText {
+.fir {
   text-align: center;
   font-size: 14px;
-  letter-spacing: -1px;
 }
 
-.text-medium {
+.sec {
   text-align: center;
-  font-size: 17px;
-  letter-spacing: -1px;
+  font-size: 18px;
 }
 
 /* 티켓 */
@@ -445,7 +437,7 @@ main {
 }
 
 .btnArrow i {
-  color: deepskyblue;
+  color: orangered;
   font-size: 20px;
   padding-left: 10px;
 }
@@ -759,4 +751,51 @@ main {
   font-size: 18px;
   color: #6a2c81;
   padding-right: 6px;
+}
+
+/* 비디오 클립 */
+.videoClip {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.videoInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: -webkit-center;
+}
+
+.videoInner .videoContent {
+  width: 235px;
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+.videoInner .videoContent a p {
+  overflow: hidden;
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+}
+
+.videoInner .videoContent a p img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
+
+.videoInner .videoContent a dl {
+  padding: 20px 0;
+  color: #3b3b3b;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.videoInner .videoContent a dl dt {
+  font-size: 14px;
+}
+
+.videoInner .videoContent a dl dd {
+  font-size: 18px;
 }
