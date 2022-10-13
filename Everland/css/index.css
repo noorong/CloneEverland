@@ -344,13 +344,6 @@ main {
   right: 10px;
 }
 
-.title-large {
-  position: relative;
-  margin: 0 0 40px;
-  text-align: center;
-  background: transparent;
-}
-
 /* 이미지 박스 */
 .list-columns ul {
   display: flex;
@@ -385,9 +378,9 @@ main {
   line-height: 22px;
 }
 
-.text-small {
+.smallText {
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: -1px;
 }
 
@@ -542,4 +535,192 @@ main {
   background-color: brown;
   top: 20px;
   right: 10px;
+}
+
+/* 인포메이션 */
+.information {
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 1040px;
+}
+
+.information .infoInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---notice--- */
+.infoInner .newsNotice {
+  box-sizing: border-box;
+  margin-right: 8px;
+  padding: 35px 20px 30px;
+  width: 325px;
+  height: 500px;
+  border-top: 2px solid #ff6941;
+  background-color: #fff;
+}
+
+.infoTitle {
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.infoTitle strong {
+  font-size: 28px;
+  font-weight: 900;
+  color: #272830;
+}
+
+.newsNotice .newsList {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #8c8c8c;
+  cursor: pointer;
+}
+
+.newsNotice .newsList li {
+  border-bottom: 1px solid #ececec;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 16px 10px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1;
+  color: #666;
+}
+
+/* ---today time--- */
+.information .today {
+  box-sizing: border-box;
+  margin-right: 8px;
+  padding: 35px 20px 30px;
+  width: 325px;
+  height: 500px;
+  border: solid #e6e6e6;
+  border-width: 0 1px 2px;
+  border-top: 2px solid #ff6941;
+}
+
+.today .dayTime {
+  margin: 0 0 20px;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.today .dayTime small {
+  font-size: 20px;
+  color: #272830;
+  font-weight: 500;
+}
+
+.today .todayTime {
+  color: #ff4c2b;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.today .performing {
+  height: 180px;
+  overflow-y: scroll;
+}
+
+.today .performing .scrollBox {
+  box-sizing: border-box;
+  padding-left: 26px;
+}
+
+.performing .scrollBox ul li {
+  height: 40px;
+  font-size: 16px;
+  color: #423b38;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.performing .scrollBox ul li .time {
+  font-size: 14px;
+  color: #444;
+  padding-right: 20px;
+}
+
+.performing .scrollBox ul li .time i {
+  font-size: 13px;
+  padding-left: 20px;
+  color: #c2c2c2;
+}
+
+.today .todayBtn {
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.today .todayBtn button {
+  width: 49%;
+}
+
+.today .todayBtn button:first-child {
+  padding: 12px;
+  border: 1px solid #ff4c2b;
+  border-radius: 30px;
+  color: #ff4c2b;
+}
+
+.today .todayBtn button:last-child {
+  padding: 12px;
+  border: 1px solid #6a2c81;
+  border-radius: 30px;
+  color: #6a2c81;
+}
+
+/* ---smart content--- */
+.information .smartContent {
+  width: 325px;
+  height: 500px;
+}
+
+.information .smartContent .infoTitle {
+  width: 324px;
+  height: 124px;
+  background: linear-gradient(#f12711, #f5af19);
+  cursor: pointer;
+  color: white;
+  padding-top: 42px;
+  margin-bottom: 0;
+}
+
+.smartContent .infoTitle strong {
+  font-weight: 700;
+  color: white;
+}
+
+.information .smart-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 246px;
+}
+
+.information .smart-link a {
+  text-align: center;
+  line-height: 60px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.information .smart-content .traffic {
+  display: block;
+  box-sizing: border-box;
+  width: 325px;
+  height: 100px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
 }
