@@ -375,9 +375,9 @@ main {
 }
 
 .individual .list-img:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1);
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 
 .phrase {
@@ -488,15 +488,47 @@ main {
 
 .uniqueTitle {
   font-family: "Single Day", cursive;
-  background: linear-gradient(circle #de6161 50%, #2657eb 50%);
+  background: linear-gradient(#de6161 40%, #2657eb 40%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 40px;
+}
+
+.goolTip article .gooltipInner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gooltipInner li {
+  overflow: hidden;
+}
+
+.gooltipInner li dl {
+  padding: 20px 0;
+  text-align: center;
+  line-height: 1.4;
+  color: rgb(102, 102, 102);
+}
+
+.gooltipInner li img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.gooltipInner li dl dt {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.gooltipInner li dl dd {
+  text-shadow: 8px 0 4px #2473ce;
 }
 
 .line3 {
   position: absolute;
-  width: 360px;
+  width: 320px;
   height: 1px;
   background-color: brown;
   top: 20px;
@@ -505,7 +537,7 @@ main {
 
 .line4 {
   position: absolute;
-  width: 360px;
+  width: 320px;
   height: 1px;
   background-color: brown;
   top: 20px;
