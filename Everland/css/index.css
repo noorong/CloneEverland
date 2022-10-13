@@ -1,294 +1,296 @@
 @charset "utf-8";
 @import "reset.css";
 
-#Wrap{
-    display: grid;
-    grid-template-rows: 10;
+#Wrap {
+  display: grid;
+  grid-template-rows: 10;
 }
 
 /* 헤더 */
 
-header .top{
-    width: 100%;
-    background-color: rgb(247, 243, 243);
-    border-bottom: 1px solid #e2e2e2;
+.top {
+  width: 100%;
+  border: 1px solid #a0a0a0;
 }
 
-header section nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 960px;
-    margin: 0 auto;
+header section nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 1040px;
+  margin: 0 auto;
 }
 
-header section nav h1{
-    padding: 6px 20px 0 0;
+header section nav h1 {
+  padding: 30px;
 }
 
-header section nav ul{
-    display: flex;
-    align-items: center;
-    text-align: center;
+header section nav ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-header section nav ul li{
-    font-size: 16px;
-    color: #666;
-    box-sizing: border-box;
-    border-left: 1px solid #e2e2e2;
-    border-right: 1px solid #e2e2e2;
-    padding: 14px 6px;
-    width: 160px;
-    cursor: pointer;
-    font-weight: 600;
+header section nav ul li {
+  font-size: 16px;
+  color: #666;
+  box-sizing: border-box;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  padding: 14px 6px;
+  width: 160px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-header section nav ul li:hover{
-    background-color: white;
+header section nav ul li:hover {
+  background-color: white;
 }
 
-header section nav ul li:nth-of-type(2){
-    border: none;
+header section nav ul li:nth-of-type(2) {
+  border: none;
 }
 
-header section nav ul li:last-child{
-    border-right: none;
+header section nav ul li:last-child {
+  border-right: none;
 }
 
-header section nav button:first-child{
-    background-color: orange;
+header section nav button:first-child {
+  background-color: orange;
 }
 
-header section nav button:nth-of-type(2){
-    background-color: skyblue;
+header section nav button:nth-of-type(2) {
+  background-color: green;
 }
 
-header section nav button:last-child{
-    background-color: purple;
+header section nav button:last-child {
+  background-color: purple;
 }
 
-header section nav div button{
-    font-size: 16px;
-    color: #666;
-    border: none;
-    padding: 12px;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    
+header section nav div {
+  display: table;
+  padding-top: 24px;
+}
+
+header section nav div button {
+  font-size: 16px;
+  color: #666;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* 헤더 검색,로고,로그인 */
-.middle{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 4px solid orange;
+.middle {
+  display: flex;
+  justify-content: center;
+  gap: 12%;
+  padding-top: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 4px solid orange;
 }
 
-.middle ul{
-    display: flex;
+.middle ul {
+  display: flex;
 }
 
 /* 검색창 */
-.search li{
-    position: relative;
+.search li {
+  position: relative;
 }
 
-.search li input[type="text"]{
-    width: 240px;
-    height: 32px;
-    text-indent: 10px;
+.search li input[type="text"] {
+  width: 240px;
+  height: 32px;
+  text-indent: 10px;
 }
 
-.search li input[type="submit"]{
-    position: absolute;
-    right: 1px;
-    width: 26px;
-    height: 24px;
-    padding: 0;
-    text-indent: -999px;
-    border: none;
-    top: 6px;
-    background: url('../images/btn_search1.gif') no-repeat left 0;
-    cursor: pointer;
+.search li input[type="submit"] {
+  position: absolute;
+  right: 1px;
+  width: 26px;
+  height: 24px;
+  padding: 0;
+  text-indent: -999px;
+  border: none;
+  top: 6px;
+  background: url("../images/btn_search1.gif") no-repeat left 0;
+  cursor: pointer;
 }
 
 /* 로그인 */
-.util{
-    gap: 20px;
-    color: #828282;
-    font-size: 14px;
-    border: 1px dashed coral;
-    border-radius: 4px;
-    padding: 10px;
+.util {
+  gap: 20px;
+  color: #828282;
+  font-size: 14px;
+  border: 1px dashed coral;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 /* 메인로고 */
-.mainLogo{
-    position: relative;
+.mainLogo {
+  position: relative;
 }
 
-.mainLogo img{
-    transition: all 0.4s;
+.mainLogo img {
+  transition: all 0.4s;
 }
 
-.mainLogo h1{
-    visibility: hidden;
-    font-size: 26px;
-    color: green;
-    position: absolute;
-    top: 20px;
-    transform: translate(10px, 10px);
+.mainLogo h1 {
+  visibility: hidden;
+  font-size: 26px;
+  color: green;
+  position: absolute;
+  top: 20px;
+  transform: translate(10px, 10px);
 }
- 
+
 /* gnb */
-.bottom{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.bottom {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.gnb{
-    position: relative;
-    font-size: 20px;
-    color: #666;
+.gnb {
+  position: relative;
+  font-size: 16px;
+  color: #666;
+  font-weight: 600;
 }
 
-.gnb button{
-    position: absolute;
-    top: 16px;
-    right: 10px;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: #fff;
-    padding: 0;
+.gnb button {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #fff;
+  padding: 0;
 }
 
-.gnb button img{
-    width: 24px;
-    height: 24px;
+.gnb button img {
+  width: 24px;
+  height: 24px;
 }
 
-.gnb > ul{
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
+.gnb > ul {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.gnb > ul li{
-    padding: 20px 80px;
+.gnb > ul li {
+  padding: 20px 80px;
 }
 
-.gnb > ul li:hover{
-    background-color: orange;
-    color: white;
+.gnb > ul li:hover {
+  background-color: orange;
+  color: white;
 }
 
-.submenu{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #d2d2d2;
-    z-index: 9999;
-    position: absolute;
-    top: 100%;
-    background-color: white;
-    opacity: 0;
+.submenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #d2d2d2;
+  z-index: 9999;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  opacity: 0;
 }
 
-.submenu div{
-    display: flex;
-    gap: 80px;
+.submenu div {
+  display: flex;
+  gap: 80px;
 }
 
-.submenu div{
-    overflow: hidden;
+.submenu div {
+  overflow: hidden;
 }
 
-.submenu.fadeIn{
-    opacity: 1;
-    transition: opacity 0.6s;
+.submenu.fadeIn {
+  opacity: 1;
+  transition: opacity 0.6s;
 }
 
-.submenu.fadeOut{
-    opacity: 0;
-    transition: opacity 0.6s;
+.submenu.fadeOut {
+  opacity: 0;
+  transition: opacity 0.6s;
 }
 
-.submenu ul{
-    width: 160px;
-    padding: 20px 0 20px 20px;
-    border-left: 1px solid #d2d2d2;
+.submenu ul {
+  width: 160px;
+  padding: 20px 0 20px 20px;
+  border-left: 1px solid #d2d2d2;
 }
 
-.submenu ul li{
-    padding: 6px 0;
-    color: #666;
+.submenu ul li {
+  padding: 6px 0;
+  color: #666;
 }
 
-.submenu ul li a:hover{
-    color: black;
-    cursor: pointer;
+.submenu ul li a:hover {
+  color: black;
+  cursor: pointer;
 }
-
 
 /* 슬라이드 */
-main{
-    overflow: hidden;
+main {
+  overflow: hidden;
 }
 
-.bannerWrap{
-    display: flex;
-    width: 500vw;
-    position: relative;
+.bannerWrap {
+  display: flex;
+  width: 500vw;
+  position: relative;
 }
 
-.inner{
-    width: 100vw;
+.inner {
+  width: 100vw;
 }
 
-.inner img{
-    width: 100%;
+.inner img {
+  width: 100%;
 }
 
 /* slide Btn */
-.moveWrap{
-    position: absolute;
-    bottom: 15px;
-    left: 9.6%;
-    min-width: 140px;
+.moveWrap {
+  position: absolute;
+  bottom: 15px;
+  left: 9.6%;
+  min-width: 140px;
 }
 
-.moveWrap ul{
-    display: flex;
-    justify-content: space-evenly;
-    
+.moveWrap ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.moveWrap ul li button{
-    width: 18px;
-    height: 18px;
-    border: none;
-    border-radius: 50%;
+.moveWrap ul li button {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
 }
 
-.moveWrap ul li button:active{
-    background-color: red;
+.moveWrap ul li button:active {
+  background-color: red;
 }
 
-
-.moveBox{
-    position: absolute;
+.moveBox {
+  position: absolute;
 }
-.moveBox .prev{
-    left: 0;
+.moveBox .prev {
+  left: 0;
 }
-.moveBox .next{
-    right: 0;
+.moveBox .next {
+  right: 0;
 }
