@@ -155,7 +155,6 @@ header section nav div button{
 
 .gnb{
     position: relative;
-    padding: 20px 0;
     font-size: 20px;
     color: #666;
 }
@@ -163,7 +162,7 @@ header section nav div button{
 .gnb button{
     position: absolute;
     top: 16px;
-    right: 0;
+    right: 10px;
     width: 24px;
     height: 24px;
     border: none;
@@ -178,14 +177,23 @@ header section nav div button{
 
 .gnb > ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gnb > ul li{
+    padding: 20px 80px;
+}
+
+.gnb > ul li:hover{
+    background-color: orange;
+    color: white;
 }
 
 .submenu{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 60px;
     border: 1px solid #d2d2d2;
     z-index: 9999;
     position: absolute;
@@ -196,6 +204,7 @@ header section nav div button{
 
 .submenu div{
     display: flex;
+    gap: 80px;
 }
 
 .submenu div{
@@ -204,14 +213,12 @@ header section nav div button{
 
 .submenu.fadeIn{
     opacity: 1;
-    transition: opacity 1s;
-    /* animation: fadeIn 1s; */
+    transition: opacity 0.6s;
 }
 
 .submenu.fadeOut{
     opacity: 0;
-    transition: opacity 1s;
-    /* animation: fadeOut 1s; */
+    transition: opacity 0.6s;
 }
 
 .submenu ul{
@@ -225,31 +232,63 @@ header section nav div button{
     color: #666;
 }
 
+.submenu ul li a:hover{
+    color: black;
+    cursor: pointer;
+}
 
 
-@keyframes fadeIn{
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-  
-  @keyframes fadeOut{
-        0%{
-            opacity: 1;
-        }
-        100%{
-            opacity: 0;
-        }
-    }
+/* 슬라이드 */
+main{
+    overflow: hidden;
+}
 
-  /* 슬라이드 */
-  .inner{
+.bannerWrap{
+    display: flex;
+    width: 500vw;
+    position: relative;
+}
+
+.inner{
     width: 100vw;
-  }
+}
 
-  .inner img{
+.inner img{
     width: 100%;
-  }
+}
+
+/* slide Btn */
+.moveWrap{
+    position: absolute;
+    bottom: 15px;
+    left: 9.6%;
+    min-width: 140px;
+}
+
+.moveWrap ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.moveWrap ul li button{
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+}
+
+.moveWrap ul li button:active{
+    background-color: red;
+}
+
+
+.moveBox{
+    position: absolute;
+}
+.moveBox .prev{
+    left: 0;
+}
+.moveBox .next{
+    right: 0;
+}

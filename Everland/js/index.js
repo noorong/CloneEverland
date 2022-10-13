@@ -5,12 +5,25 @@ const article = document.querySelector(".mainLogo");
 const img = document.querySelector(".mainLogo>img");
 const h1 = document.querySelector(".mainLogo h1");
 
+
+
 // gnb 슬라이드
 const gnb = document.querySelector(".gnb ul");
 const btm = document.querySelector(".bottom");
 const sub = document.querySelector(".submenu");
+const moveBtn = document.querySelectorAll(".moveWrap > ul li button")
 
-console.log(gnb,123,sub)
+const arr = Array.from(moveBtn)
+
+
+function move(){
+      
+}
+
+ for(let i = 0; i < arr.length; i++){
+  arr[i].addEventListener("click", move)
+ }
+
 
 let subToggle = true;
 
@@ -38,15 +51,4 @@ btm.addEventListener("mouseleave", hide);
 
 
 
-// const change = () =>{
-//     if(h1.style.visibility === "hidden") console.log(123)
-    
 
-    
-// }
-
-// setInterval(()=>{
-//     change()
-
-//     // console.dir(article.children)
-// }, 2000)
