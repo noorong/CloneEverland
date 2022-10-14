@@ -39,3 +39,4 @@ function hide() {
 
 gnb.addEventListener("mouseover", show);
 btm.addEventListener("mouseleave", hide);
+

@@ -5,7 +5,6 @@
     <title>에버랜드</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-  />
 </head>
 <body>
     <section id="Wrap">
@@ -107,7 +106,7 @@
 
         <main role="main" >
             <!-- 배너 -->
-            <article class="bannerWrap" >
+            <!-- <article class="bannerWrap" >
                 <div class="inner">
                     <img src="./images/bg1.jpg" alt="banner1"/>
                 </div>
@@ -138,7 +137,72 @@
                         <li><button type="button"></button></li>
                     </ul>
                 </article>
-            </article>
+            </article> -->
+            <section class="bannerContainer">
+              <article class="bannerWrap">
+                <div class="slideWrap">
+                    <input type="radio" name="slide" id="slide01" checked />
+                    <input type="radio" name="slide" id="slide02" />
+                    <input type="radio" name="slide" id="slide03" />
+                    <input type="radio" name="slide" id="slide04" />
+                    <input type="radio" name="slide" id="slide05" />
+                    <input type="radio" name="slide" id="slide06" />
+                    <input type="radio" name="slide" id="slide07" />
+                  <ul class="slideList">
+                    <li>
+                      <a>
+                        <label for="slide07" class="left"></label>
+                        <img src="./images/bg1.jpg" alt="bg01"/>
+                        <label for="slide02" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide01" class="left"></label>
+                        <img src="./images/ba2.png" alt="bg02"/>
+                        <label for="slide03" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide02" class="left"></label>
+                        <img src="./images/bg3.jpg" alt="bg03"/>
+                        <label for="slide04" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide03" class="left"></label>
+                        <img src="./images/bg4.jpg" alt="bg04"/>
+                        <label for="slide05" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide04" class="left"></label>
+                        <img src="./images/bg5.jpg" alt="bg05"/>
+                        <label for="slide06" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide05" class="left"></label>
+                        <img src="./images/ba6.png" />
+                        <label for="slide07" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide06" class="left"></label>
+                        <img src="./images/bg2.jpg" />
+                        <label for="slide01" class="right"></label>
+                      </a>
+                    </li>
+                  </ul>
+                 
+                </div>
+              </article>
+            </section>
 
             <!-- what's new -->
             <section>
@@ -572,13 +636,78 @@
                       </a>
                     </div>
               </article>
-                 
+              
+              <div class="tipArrow">
+                <a href="#" class="tipBtn">
+                    <span><strong>더 많은 꿀팁 보러가기</strong></span>
+                    <i class="far fa-bell"></i>
+                </a>
+              </div>
             </section>
 
         </main>
 
+        <!-- 푸터 -->
         <footer>
-          
+          <article>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/user/withEverland"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/witheverland/"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/witheverland"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://blog.naver.com/witheverland"><i class="fa-brands fa-blogger"></i></a>
+              </li>
+              <li>
+                <a href="https://www.witheverland.com/"><i class="fa-solid fa-t"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/witheverland"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </article>
+          <address>
+            <ul class="addressLink">
+              <li>
+                <a href="#">에버랜드 리조트 소개</a>
+              </li>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">이메일주소 무단수집 거부</a>
+              </li>
+              <li>
+                <a href="#">채용</a>
+              </li>
+              <li>
+                <a href="#">캐스트참여</a>
+              </li>
+              <li>
+                <a href="#">사이트맵</a>
+              </li>
+            </ul>
+
+            <div class="addressText">
+              <p>
+                경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)
+              </p>
+              <p>
+                대표이사 : 한승환 | 사업자등록번호 : 135-85-04288 | 통신판매업 신고번호 : 제2006-용인처인-0216호 | 사업자정보확인▶
+              </p>
+              <p>
+                <strong style="font-size: 14px; font-weight: 600; cursor: pointer;">손님상담센터</strong> : 031-320-5000(유료) | <span style="color: #d1d1d1; font-weight: 600; cursor: pointer;">개인정보처리방침 | 방침 개정 안내 | 입찰공고</span>
+              </p>
+              <p class="copyLight">
+                Copyright © Samsung C&T Corporation. All rights reserved.
+              </p>
+            </div>
+          </address>
         </footer>
 
 
