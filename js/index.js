@@ -20,7 +20,7 @@ window.setInterval(function(){
     chnageImg = !chnageImg
     )
   
-}, 10000)
+}, 8000)
 
 
   

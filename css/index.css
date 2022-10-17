@@ -139,28 +139,37 @@ header section nav div button {
 
 
 .mainLogo h2 {
+  width: 180px;
   font-size: 26px;
-  color: green;
   position: absolute;
   top: 20px;
-  transform: translate(10px, 10px);
-  transition: opacity 1s;
+  transition: all 0.8s;
   opacity: 0;
 }
 
+.mainLogo h2 a{
+  color: cornflowerblue;
+}
+
 .mainLogo img{
-  transition: opacity 1s;
+  transition: opacity 0.8s;
 }
 
 .mainLogo h2.fadeOn{
   opacity: 1;
-  transition: opacity 1s;
-  /* animation: fadeOn 0.4s; */
+  transition: all 0.8s;
+  animation: rotateTurn 0.8s;
+}
+
+@keyframes rotateTurn {
+  0% { transform: translateX(-300%) scale(0.3) rotate(0deg); }
+  50% { transform: translateX(0) scale(1.0) rotate(0deg); }
+  100% { transform: translateX(0) scale(1.0) rotate(740deg); }
 }
 
 .mainLogo img.fadeExit{
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.8s;
   /* animation: fadeExit 0.4s; */
 }
 
