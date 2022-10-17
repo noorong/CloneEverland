@@ -1,79 +1,724 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Resume</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="#profile">profile</a></li>
-          <li><a href="#detail">detail</a></li>
-          <li><a href="./Everland/index.html">Everland</a></li>
-          <li><a href="./스터디.pdf">Story Board</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <title>에버랜드</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <section id="Wrap">
+        <header>
+            <section class="top">
+                <nav>
+                    <h1><a href="/"><img src="./images/HLogo.png" alt="headerLogo"/></a></h1>
+                    <ul>
+                        <li>에버랜드</li>
+                        <li>케리비안 베이</li>
+                        <li>홈브릿지</li>
+                    </ul>
+                    <div>
+                        <button type="button">스마트예약</button>
+                        <button type="button">학생단체예약</button>
+                        <button type="button">기업단체예약</button>
+                    </div>
+                </nav>
+            </section>
+            <div class="middle">
+                <ul class="search">
+                    <li>
+                        <input type="text" placeholder="검색어를 입력하세요."/>
+                        <input type="submit" title="searchIcon"/>
+                    </li>
+                </ul>
+                <article class="mainLogo">
+                    <img src="./images/MainLogo.png" alt="mainLogo" />
+                    <h2>에버랜드</h2>
+                </article>
+                <ul class="util">
+                    <li><a>로그인</a></li>
+                    <li><a>회원가입</a></li>
+                </ul>
+            </div>
+            <div title="menuBar" class="bottom">
+                <section class="gnb">
+                    <ul>
+                        <li><span>이용정보</span></li>
+                        <li><span>요금&프로모션</span></li>
+                        <li><span>즐길거리</span></li>                    
+                        <li><span>멤버십</span></li>
+                        <li>에버랜드 더 알아보기</span></li>
+                    </ul>
+                    <button type="button" title="magicBtn">
+                        <img src="../Everland/images/logo_magicseed.png" alt="magicBtn"/>
+                    </button>
+                </section>
 
-    <main role="main" class="main">
-      <article id="profile">
-        <h1>이다노</h1>
-        <p><img src="./images/dino.png" alt="굿다이노" /></p>
-      </article>
-      <article id="detail">
-        <section>
-          <ul>
-            <p>인적사항</p>
-            <li>
-              <strong>생년월일:</strong> 1996.09.26
-              <input type="text" placeholder="A형" />
-            </li>
-            <li><strong>주소:</strong> 인천광역시 미추홀구 동주길</li>
-            <li>
-              <strong>연락처:</strong> 010-3993-3263<input
-                type="text"
-                placeholder="eksh7080@gmail.com"
-              />
-            </li>
-          </ul>
-        </section>
-        <section>
-          <ul>
-            <p>학력사항</p>
-            <li>◎ 2012.03 ~ 2015.02: 인천고등학교[졸업] | 인천</li>
-            <li>◎ 2015.03 ~ 2021.02: 청운대학교[졸업] | 충남 |호텔경영학과</li>
-            <li>◎ 2021.04 ~ 2021.10: 퍼블리셔 양성과정 수료</li>
-          </ul>
-        </section>
-        <section>
-          <ul>
-            <p>경력사항</p>
-            <li>◎ 칵테일 동아리 CLUB.RC 회장</li>
-            <li>◎ 축구 동아리 PUMA 충남지역대회 입상</li>
-            <li>◎ SI 퍼블리셔 업무 담당</li>
-          </ul>
-        </section>
-        <section>
-          <ul>
-            <p>보유 스킬</p>
-            <li><a href="page/html.html">1.HTML</a></li>
-            <li><a href="page/css.html">2.CSS</a></li>
-            <li><a href="page/javascript.html">3.JavaScript</a></li>
-          </ul>
-        </section>
-      </article>
-    </main>
+                <section class="submenu">
+                    <div>
+                        <ul>
+                            <li><a>뉴스공지</a></li>
+                            <li><a>이용방법</a></li>
+                            <li><a>운영시간</a></li>
+                            <li><a>운휴안내</a></li>
+                            <li><a>교통정보</a></li>
+                            <li><a>편의시설</a></li>
+                            <li><a>가이드맵</a></li>
+                            <li><a>모바일앱</a></li>
+                        </ul>
 
-    <footer>
-      <address>
-        <dl>
-          <dt>AUTHOR BY 이다노</dt>
-          <dd>인천광역시 미추홀구 동주길 225829</dd>
-        </dl>
-      </address>
-    </footer>
-    <p class="copylight">COPYRIGHTⓒ 2022 달수박 ALL RIGHT RESERVED</p>
-  </body>
+                        <ul>
+                            <li><a>이용요금</a></li>
+                            <li><a>제휴카드</a></li>
+                            <li><a>스페셜 프로모션</a></li>
+                            <li><a>드림투어</a></li>
+                            <li><a>체험 프로그램</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a>추천 코스</a></li>
+                            <li><a>어트랙션</a></li>
+                            <li><a>엔터테인먼트</a></li>
+                            <li><a>주토피아(동물원)</a></li>
+                            <li><a>플랜토피아(정원)</a></li>
+                            <li><a>레스토랑</a></li>
+                            <li><a>선물샵 | MD 쇼핑몰</a></li>
+                            <li><a>글램핑</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a>연간 이용권</a></li>
+                            <li><a>시즌 이용권</a></li>
+                            <li><a>스피드웨이</a></li>
+                            <li><a>동물사랑단</a></li>
+                            <li><a>식물사랑단</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a>Editor's Pick</a></li>
+                            <li><a>에버랜드 스토리</a></li>
+                            <li><a>에버랜드 테마뮤직</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <main role="main" >
+            <!-- 배너 -->
+            <!-- <article class="bannerWrap" >
+                <div class="inner">
+                    <img src="./images/bg1.jpg" alt="banner1"/>
+                </div>
+                <div class="inner">
+                    <img src="./images/bg2.jpg" alt="banner2"/>
+                </div>
+                <div class="inner">
+                    <img src="./images/bg3.jpg" alt="banner3"/>
+                </div>
+                <div class="inner">
+                    <img src="./images/bg4.jpg" alt="banner4"/>
+                </div>
+                <div class="inner">
+                    <img src="./images/bg5.jpg" alt="banner5"/>
+                </div>
+
+                <article class="moveBox">
+                    <button type="button" class="prev">prev</button>
+                    <button type="button" class="next">next</button>
+                </article>
+
+                <article class="moveWrap">
+                    <ul>
+                        <li><button type="button"></button></li>
+                        <li><button type="button"></button></li>
+                        <li><button type="button"></button></li>
+                        <li><button type="button"></button></li>
+                        <li><button type="button"></button></li>
+                    </ul>
+                </article>
+            </article> -->
+            <section class="bannerContainer">
+              <article class="bannerWrap">
+                <div class="slideWrap">
+                    <input type="radio" name="slide" id="slide01" checked />
+                    <input type="radio" name="slide" id="slide02" />
+                    <input type="radio" name="slide" id="slide03" />
+                    <input type="radio" name="slide" id="slide04" />
+                    <input type="radio" name="slide" id="slide05" />
+                    <input type="radio" name="slide" id="slide06" />
+                    <input type="radio" name="slide" id="slide07" />
+                  <ul class="slideList">
+                    <li>
+                      <a>
+                        <label for="slide07" class="left"></label>
+                        <img src="./images/bg1.jpg" alt="bg01"/>
+                        <label for="slide02" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide01" class="left"></label>
+                        <img src="./images/ba2.png" alt="bg02"/>
+                        <label for="slide03" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide02" class="left"></label>
+                        <img src="./images/bg3.jpg" alt="bg03"/>
+                        <label for="slide04" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide03" class="left"></label>
+                        <img src="./images/bg4.jpg" alt="bg04"/>
+                        <label for="slide05" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide04" class="left"></label>
+                        <img src="./images/bg5.jpg" alt="bg05"/>
+                        <label for="slide06" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide05" class="left"></label>
+                        <img src="./images/ba6.png" />
+                        <label for="slide07" class="right"></label>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <label for="slide06" class="left"></label>
+                        <img src="./images/bg2.jpg" />
+                        <label for="slide01" class="right"></label>
+                      </a>
+                    </li>
+                  </ul>
+                 
+                </div>
+              </article>
+            </section>
+
+            <!-- what's new -->
+            <section>
+                <div class="whatInner">
+
+                  <div class="titleWrap">
+                    <strong>What's New</strong>
+                    <p class="subTitle">꿈과 환상의 나라로 어서오세요!</p>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                  </div>
+
+                  <div class="innerImg">
+                    <ul>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content01.jpg" alt="content01" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">가을 낭만정원</p>
+                          <p class="sec">하늘정원길</p>
+                        </div>
+                      </li>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content02.jpg" alt="content02" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">EVER x SMTOWN</p>
+                          <p class="sec">SEASON.1</p>
+                        </div>
+                      </li>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content03.jpg" alt="content03" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">카리브해 해변마을로~</p>
+                          <p class="sec">마르카리베</p>
+                        </div>
+                      </li>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content04.jpg" alt="content04" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">튠업 뮤지션의 무대</p>
+                          <p class="sec">폴 인 가든 콘서트</p>
+                        </div>
+                      </li>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content05.jpg" alt="content05" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">내가 바로</p>
+                          <p class="sec">눈사람 디자이너</p>
+                        </div>
+                      </li>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content06.jpg" alt="content06" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">극강의 공포!</p>
+                          <p class="sec">호러메이즈</p>
+                        </div>
+                      </li>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content07.jpg" alt="content07" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">에버랜드x스냅스</p>
+                          <p class="sec">할로윈 포토북 출시</p>
+                        </div>
+                      </li>
+                      <li class="imgBox">
+                        <p class="imgList">
+                          <img src="./images/content08.jpg" alt="content08" />
+                        </p>
+                        <div class="innerContent">
+                          <p class="fir">Brand new</p>
+                          <p class="sec">글로벌 페어</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+            <!-- 티켓 정보 -->
+            <section class="ticketInfo">
+                <div class="titleWrap">
+                    <strong>Ticket Promotion</strong>
+                    <p class="subTitle">나에게 꼭 맞춘 알찬 할인 정보</p>
+                </div>
+
+                <article>
+                    <ul class="ticketInner">
+                        <li>
+                            <small class="small">할인정보</small>
+                            <img src="./images/ticket1.png" alt="ticket01"/>
+                            <dl>
+                                <dt>스마트예약</dt>
+                                <dd>27,000원~</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <small class="small">할인정보</small>
+                            <img src="./images/ticket2.png" alt="ticket02"/>
+                            <dl>
+                                <dt>스마트예약</dt>
+                                <dd>27,000원~</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <small class="small">할인정보</small>
+                            <img src="./images/ticket3.png" alt="ticket03"/>
+                            <dl>
+                                <dt>스마트예약</dt>
+                                <dd>27,000원~</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <small class="small">할인정보</small>
+                            <img src="./images/ticket4.png" alt="ticket04"/>
+                            <dl>
+                                <dt>스마트예약</dt>
+                                <dd>27,000원~</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <small class="small">할인정보</small>
+                            <img src="./images/ticket5.png" alt="ticket05"/>
+                            <dl>
+                                <dt>스마트예약</dt>
+                                <dd>27,000원~</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </article>
+
+                <div class="btnArrow">
+                    <a href="#" class="ticketBtn">
+                        <span><strong>스페셜 프로모션</strong>자세히 보기</span>
+                        <i class="far fa-bell"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 에버랜드 꿀팁 -->
+            <section class="goolTip">
+                <div class="titleWrap">
+                    <p class="uniqueTitle">편리함 가득~ 에버랜드</p>
+                    <span class="line3"></span>
+                    <span class="line4"></span>
+                </div>
+
+                <article>
+                  <ul class="gooltipInner">
+                      <li>
+                          <img src="./images/tip01.png" alt="tip01"/>
+                          <dl>
+                              <dt>스마트 줄서기</dt>
+                              <dd>이용가이드</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <img src="./images/tip02.jpg" alt="tip02"/>
+                          <dl>
+                              <dt>편하고 여유있게</dt>
+                              <dd>모바일 오더</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <img src="./images/tip03.jpg" alt="tip03"/>
+                          <dl>
+                              <dt>간편하고 편리하게</dt>
+                              <dd>모바일 기프트카드</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <img src="./images/tip04.jpg" alt="tip04"/>
+                          <dl>
+                              <dt>인기템을 미리미리</dt>
+                              <dd>굿즈 픽업 서비스</dd>
+                          </dl>
+                      </li>
+                  </ul>
+              </article>
+            </section>
+
+            <!-- 인포메이션 -->
+            <section class="information">
+              <div class="titleWrap">
+                <strong>Information</strong>
+                <p class="subTitle">지금 바로 생생한 현장 소식</p>
+              </div>
+        
+              <article class="infoInner">
+                <div class="newsNotice">
+                  <h4 class="infoTitle">
+                    <strong>NEWS & NOTICE</strong>
+                    <p class="subTitle">새로운 소식들</p>
+                  </h4>
+      
+                  <ul class="newsList">
+                    <li>[공지]코로나 바이러스 감염증-19 관련 안내</li>
+                    <li>외국인 손님을 위한 영문 APP 이용 안내</li>
+                    <li>[공지] 입장 후 스마트 줄서기 신청 안내</li>
+                    <li>스마트줄서기 초보를 위한 이용가이드</li>
+                    <li>[공지] 하늘정원길 이용 제한 안내</li>
+                    <li>[공지] 비 happy 기프트 지급일</li>
+                    <li>[에버랜드 X 스냅스] 블러드시티 포토북 출시</li>
+                  </ul>
+                </div>
+
+                <div class="today">
+                  <h4 class="infoTitle">
+                    <strong>TODAY</strong>
+                    <p class="subTitle">오늘의 운영시간</p>
+                  </h4>
+      
+                  <div class="dayTime">
+                    <small>10월 13일 (목)</small>
+                    <p class="todayTime">10:00 - 22:00</p>
+                  </div>
+
+                  <div class="performing">
+                    <div class="scrollBox">
+                      <ul>
+                        <li>
+                          <span class="time">
+                            11:30 <i class="fa fa-circle"></i>
+                          </span> 
+                          고스트 맨션 
+                           
+                        </li>
+                        <li>
+                          <span class="time">
+                            13:00 <i class="fa fa-circle"></i>
+                          </span>  
+                          판타스틱
+                        </li>
+                        <li>
+                          <span class="time">
+                            13:20 <i class="fa fa-circle"></i>
+                          </span>  
+                            광란의 퍼레이드
+                        </li>
+                        <li>
+                          <span class="time">
+                            14:00 <i class="fa fa-circle"></i>
+                          </span> 
+                           크레이지 좀비 헌트
+                        </li>
+                        <li>
+                          <span class="time">
+                            14:30 <i class="fa fa-circle"></i>
+                          </span> 
+                          문라이트 퍼레이드
+                        </li>
+                        <li>
+                          <span class="time">
+                            15:00 <i class="fa fa-circle"></i>
+                          </span> 
+                          어텀 미디어 가든
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="todayBtn">
+                    <button type="button">공연시간 더보기</button>
+                    <button type="button">어트랙션 운휴안내</button>
+                  </div>
+                </div>
+
+                <div class="smartContent">
+                  <h4 class="infoTitle">
+                    <strong>스마트예약</strong>
+                    <p class="subTitle">방문 전에 미리 준비!</p>
+                  </h4>
+                  <div class="smartLink">
+                    <a>
+                      <i class="fa fa-ticket"></i>
+                      <span>이용권</span>
+                    </a>
+                    <a>
+                      <i class="fa fa-users-viewfinder">
+                        
+                      </i>
+                      <span>연간 이용권</span>
+                    </a>
+                    <a>
+                      <i class="fa-solid fa-utensils">
+                        
+                      </i>
+                      <span>레스토랑<br/>테라스</span>
+                    </a>
+                    <a>
+                      <i class="fa fa-magnifying-glass-location">
+                        
+                      </i>
+                      <span>체험<br/>프로그램</span>
+                    </a>
+                    <a>
+                      <i class="fa fa-parking">
+                        
+                      </i>
+                      <span>발레파킹</span>
+                    </a>
+                    <a>
+                      <i class="fa fa-star-and-crescent">
+                        
+                      </i>
+                      <span>스페셜<br/>패키지</span>
+                    </a>
+                  </div>
+                  <a class="traffic">
+                    <i class="fa fa-bus"></i>
+                    <p>
+                      <small>"우리집에서 에버랜드까지"</small><br/>
+                      <span>대중교통·자가용</span>이용방법
+                    </p>
+                  </a>
+                </div>
+              </article>
+              </div>
+            </section>
+
+            <!-- 비디오 클립 -->
+            <section class="videoClip">
+              <div class="titleWrap">
+                <strong>Editor’s Clip</strong>
+                <p class="subTitle">매일매일이 즐거워~ 에버랜드 이야기</p>
+                <span class="line1"></span>
+                <span class="line2"></span>
+              </div>
+
+              <article class="videoInner">
+                  <div class="videoContent">
+                      <a href="https://youtu.be/GqylQBqaMqI" target="_blank">
+                          <p>
+                              <img src="./images/video01.jpg" alt="video01"/>
+                          </p>
+                          <dl>
+                            <dt>랜선 할로윈</dt>
+                            <dd>에버랜드 고스트맨션</dd>
+                          </dl>
+                      </a>
+                  </div>
+                  <div class="videoContent">
+                      <a href="https://youtu.be/z1Apa6hIboE" target="_blank">
+                          <p class="list-img">
+                            <img src="./images/video02.jpg"alt="블러드시티6 비하인드 스토리"/>                       
+                          </p>
+                          <dl>
+                            <dt>블러드시티6</dt>
+                            <dd>비하인드 스토리 </dd>
+                          </dl>
+                      </a>
+                  </div>
+                  <div class="videoContent">
+                    <a href="https://youtu.be/GYpPr1cQ_lU" target="_blank">
+                          <p class="list-img">
+                            <img
+                                  src="./images/video03.jpg"
+                                  alt="Trick or Treat">
+                          </p>
+                          <dl>
+                            <dt>에버랜드 달콤살벌 </dt>
+                            <dd>Trick or Treat&nbsp;</dd>
+                          </dl>
+                      </a>
+                    </div>
+                  <div class="videoContent">
+                    <a href="https://youtu.be/JJQxulrSWk8" target="_blank">
+                          <p class="list-img">
+                            <img src="./images/video04.jpg" alt="집념의 호랑이 타이거밸리 브이로그"/>
+                          </p>
+                          <dl>
+                            <dt>집념의 호랑이</dt>
+                            <dd>타이거밸리 브이로그</dd>
+                          </dl>
+                      </a>
+                    </div>
+                  <div class="videoContent">
+                    <a href="https://youtu.be/n7OR-gVEjQE" target="_blank">
+                          <p class="list-img">
+                            <img src="./images/video05.jpg" alt="새롭게 단장한 NEW 판타지아"/>
+                          </p>
+                          <dl>
+                            <dt>새롭게 단장한</dt>
+                            <dd>NEW 판타지아</dd>
+                          </dl>
+                      </a>
+                    </div>
+                  <div class="videoContent">
+                    <a href="https://youtu.be/_kfjC95vG80" target="_blank">
+                          <p class="list-img">
+                            <img src="./images/video06.jpg" alt="좀비를 여신으로 할로윈 좀비"/>
+                          </p>
+                          <dl>
+                            <dt>좀비를 여신으로</dt>
+                            <dd>할로윈 좀비</dd>
+                          </dl>
+                      </a>
+                    </div>
+                  <div class="videoContent">
+                    <a href="https://youtu.be/WAUe7SsBnXI" target="_blank">
+                          <p class="list-img">
+                            <img src="./images/video07.jpg" alt="에버랜드 할로윈 #티타남"/>
+                          </p>
+                          <dl>
+                            <dt>에버랜드 할로윈</dt>
+                            <dd>#티타남</dd>
+                          </dl>
+                      </a>
+                    </div>
+                  <div class="videoContent">
+                    <a href="https://www.youtube.com/watch?v=608APnqm9cQ" target="_blank">
+                          <p class="list-img">
+                            <img src="./images/video08.jpg" alt="할로윈 Official MV 소울리스좌"/>
+                          </p>
+                          <dl>
+                            <dt>할로윈 Official MV</dt>
+                            <dd>소울리스좌 할로윈</dd>
+                          </dl>
+                      </a>
+                    </div>
+              </article>
+              
+              <div class="tipArrow">
+                <a href="#" class="tipBtn">
+                    <span><strong>더 많은 꿀팁 보러가기</strong></span>
+                    <i class="far fa-bell"></i>
+                </a>
+              </div>
+            </section>
+
+        </main>
+
+        <!-- 푸터 -->
+        <footer>
+          <article>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/user/withEverland"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/witheverland/"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/witheverland"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://blog.naver.com/witheverland"><i class="fa-brands fa-blogger"></i></a>
+              </li>
+              <li>
+                <a href="https://www.witheverland.com/"><i class="fa-solid fa-t"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/witheverland"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </article>
+          <address>
+            <ul class="addressLink">
+              <li>
+                <a href="#">에버랜드 리조트 소개</a>
+              </li>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">이메일주소 무단수집 거부</a>
+              </li>
+              <li>
+                <a href="#">채용</a>
+              </li>
+              <li>
+                <a href="#">캐스트참여</a>
+              </li>
+              <li>
+                <a href="#">사이트맵</a>
+              </li>
+            </ul>
+
+            <div class="addressText">
+              <p>
+                경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)
+              </p>
+              <p>
+                대표이사 : 한승환 | 사업자등록번호 : 135-85-04288 | 통신판매업 신고번호 : 제2006-용인처인-0216호 | 사업자정보확인▶
+              </p>
+              <p>
+                <strong style="font-size: 14px; font-weight: 600; cursor: pointer;">손님상담센터</strong> : 031-320-5000(유료) | <span style="color: #d1d1d1; font-weight: 600; cursor: pointer;">개인정보처리방침 | 방침 개정 안내 | 입찰공고</span>
+              </p>
+              <p class="copyLight">
+                Copyright © Samsung C&T Corporation. All rights reserved.
+              </p>
+            </div>
+          </address>
+        </footer>
+
+
+
+
+
+    </section>
+
+    <script src="./js/index.js"></script>
+ 
+
+    
+</body>
 </html>
