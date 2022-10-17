@@ -1,4 +1,4 @@
-            클론코딩 에버랜드 URL 입니다. <br/>
+            클론코딩 에버랜드 URL 입니다.
 <h2>https://eksh7080.github.io/Resume_study/</h2><br/>
 
         실제 에버랜드 사이트와 비교해서 보시면 더 재밌어요!!
